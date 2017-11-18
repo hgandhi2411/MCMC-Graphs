@@ -54,7 +54,12 @@
   },
   "repository": "hgandhi2411/mcmc-graphs",
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": ["lib/**/*.{js,jsx}", "!**/node_modules/**"]
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "lowdash": "^1.1.0"
+  }
 }
