@@ -1,17 +1,20 @@
 {
   "name": "mcmc-graphs",
   "version": "0.0.0",
-  "description":
-    "Using Markov Chain Monte Carlo, get the shortest paths for given nodes.",
+  "description": "Using Markov Chain Monte Carlo, get the shortest paths for given nodes.",
   "homepage": "",
   "author": {
     "name": "Heta Gandhi",
     "email": "hgandhi@ur.rochester.edu",
     "url": ""
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "main": "lib/index.js",
-  "keywords": [""],
+  "keywords": [
+    ""
+  ],
   "devDependencies": {
     "coveralls": "^2.13.1",
     "nsp": "^2.6.3",
@@ -32,11 +35,20 @@
     "test": "jest"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"],
-    "*.json": ["prettier --write", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "eslintConfig": {
-    "extends": ["xo", "prettier"],
+    "extends": [
+      "xo",
+      "prettier"
+    ],
     "env": {
       "jest": true,
       "node": true
@@ -50,16 +62,22 @@
         }
       ]
     },
-    "plugins": ["prettier"]
+    "plugins": [
+      "prettier"
+    ]
   },
   "repository": "hgandhi2411/mcmc-graphs",
   "jest": {
     "testEnvironment": "node",
     "collectCoverage": true,
-    "collectCoverageFrom": ["lib/**/*.{js,jsx}", "!**/node_modules/**"]
+    "collectCoverageFrom": [
+      "lib/**/*.{js,jsx}",
+      "!**/node_modules/**"
+    ]
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "jsnetworkx": "^0.3.4",
     "lowdash": "^1.1.0"
   }
 }
