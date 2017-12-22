@@ -32,7 +32,12 @@ An example of running the code is:
 ```sh
 $ node lib\index.js -r 2 -n 5 -c [[1, 2], [3, 4], [6, 7], [7, 8], [0, 5]]
 ```
-
+Before running the code, uncomment the last two lines in lib\index.js before module.export.
+```js
+// var top10 = mcmc();
+// console.log(top10);
+```
+Do not uncomment these while running the tests.
 ### Problems to address
 
 1. The code throws errors after a certain number of iterations. Error still untracked!
